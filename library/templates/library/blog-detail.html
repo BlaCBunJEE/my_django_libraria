@@ -12,15 +12,15 @@
         <title>..:: LIBRARIA ::..</title>
 
         <!-- Favicon -->
-        <link href="static/images/favicon.ico" rel="icon" type="image/x-icon" />
+        <link href="{% static 'images/favicon.ico" rel="icon" type="image/x-icon" />
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i%7CLato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet" />
-        <link href="static/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <link href="{% static 'css/font-awesome.min.css" rel="stylesheet" type="text/css" />
         
         <!-- Mobile Menu -->
-        <link href="static/css/mmenu.css" rel="stylesheet" type="text/css" />
-        <link href="static/css/mmenu.positioning.css" rel="stylesheet" type="text/css" />
+        <link href="{% static 'css/mmenu.css" rel="stylesheet" type="text/css" />
+        <link href="{% static 'css/mmenu.positioning.css" rel="stylesheet" type="text/css" />
 
         <!-- Stylesheet -->
         <link href="style.css" rel="stylesheet" type="text/css" />
@@ -28,8 +28,8 @@
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
-        <script src="static/js/html5shiv.min.js"></script>
-        <script src="static/js/respond.min.js"></script>
+        <script src="{% static 'js/html5shiv.min.js"></script>
+        <script src="{% static 'js/respond.min.js"></script>
         <![endif]-->
 
     </head>
@@ -47,7 +47,7 @@
                                     <div class="navbar-brand">
                                         <h1>
                                             <a href="index-2.html">
-                                                <img src="static/images/libraria-logo-v1.png" alt="LIBRARIA" />
+                                                <img src="{% static 'images/libraria-logo-v1.png' %}" alt="LIBRARIA" />
                                             </a>
                                         </h1>
                                     </div>
@@ -76,7 +76,7 @@
                                                     <div class="dropdown-menu cart-dropdown">
                                                         <ul>
                                                             <li class="clearfix">
-                                                                <img src="static/images/header-cart-image-01.jpg" alt="cart item" />
+                                                                <img src="{% static 'images/header-cart-image-01.jpg' %}" alt="cart item" />
                                                                 <div class="item-info">
                                                                     <div class="name">
                                                                         <a href="#">The Great Gatsby</a>
@@ -87,7 +87,7 @@
                                                                 <a class="remove" href="#"><i class="fa fa-trash-o"></i></a>
                                                             </li>
                                                             <li class="clearfix">
-                                                                <img src="static/images/header-cart-image-02.jpg" alt="cart item" />
+                                                                <img src="{% static 'images/header-cart-image-02.jpg' %}" alt="cart item" />
                                                                 <div class="item-info">
                                                                     <div class="name">
                                                                         <a href="#">The Great Gatsby</a>
@@ -98,7 +98,7 @@
                                                                 <a class="remove" href="#"><i class="fa fa-trash-o"></i></a>
                                                             </li>
                                                             <li class="clearfix">
-                                                                <img src="static/images/header-cart-image-03.jpg" alt="cart item" />
+                                                                <img src="{% static 'images/header-cart-image-03.jpg' %}" alt="cart item" />
                                                                 <div class="item-info">
                                                                     <div class="name">
                                                                         <a href="#">The Great Gatsby</a>
@@ -283,7 +283,7 @@
                                                         </div>
                                                     </div>
                                                     <figure>
-                                                        <img alt="blog" src="static/images/blog/post-detail-img.jpg" />
+                                                        <img alt="blog" src="{% static 'images/blog/post-detail-img.jpg' %}" />
                                                     </figure>
                                                 </div>
                                                 <div class="post-detail">
@@ -311,7 +311,7 @@
                                                     <div class="entry-content">
                                                         <p>Proin tincidunt molestie urna, non fringilla est pretium et. Proin dignissim porttitor quam, eget gravida ante accumsan et. Cras quis commodo massa. Nullam id mauris vel arcu ultricies hendrerit. Praesent hendrerit posuere risus, quis iaculis erat auctor non. Fusce bibendum in lorem ac pharetra. Mauris bibendum placerat massa non pellentesque. Maecenas interdum, nisl quis molestie gravida, sapien dui dictum urna, at pretium odio massa ut nibh. Nam sit amet eros ultricies leo ultrices sodales nec vel dui. Mauris imperdiet turpis sit amet lobortis efficitur. Mauris commodo nunc non risus auctor finibus. Ut egestas urna quis elit egestas, ac bibendum orci maximus. Maecenas risus magna, mollis et purus sit amet, pellentesque tempor lacus. Quisque dictum tortor ac est auctor, ut dapibus risus rutrum. Quisque porttitor turpis in sagittis porttitor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean egestas consequat porttitor.</p>
                                                         <p>Praesent lorem felis, fringilla in feugiat a, pretium in erat. Mauris ultricies rhoncus justo, quis sollicitudin risus rutrum sed. Cras sit amet odio eget felis dignissim elementum sit amet a justo. Suspendisse sodales sem et fermentum luctus. Phasellus quis sapien tellus. Aenean sit amet est purus. Vestibulum justo risus, pharetra in sem eu, bibendum iaculis nisl. Aliquam pulvinar tellus vel ornare ultrices. Nam cursus varius egestas. Cras sed varius nulla, non volutpat diam. Sed ultricies dolor purus, vitae consectetur dolor imperdiet non.</p>
-                                                        <img src="static/images/blog/post-detail-quote.jpg" class="align-left" alt="">
+                                                        <img src="{% static 'images/blog/post-detail-quote.jpg' %}" class="align-left" alt="">
                                                         <blockquote>
                                                             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                                                             <em>~ Adrey Pachai ~</em>
@@ -328,7 +328,7 @@
                                             </div>
                                         </article>
                                         <div class="about-author">
-                                            <img src="static/images/blog/about-author.jpg" alt="" />
+                                            <img src="{% static 'images/blog/about-author.jpg' %}" alt="" />
                                             <div class="author-content">
                                                 <div class="author-head">
                                                     <h3>Tom Hanks</h3>
@@ -360,7 +360,7 @@
                                                     <li class="comment even thread-even depth-1 parent">
                                                         <div class="comment-body">
                                                             <div class="comment-author vcard">
-                                                                <img class="avatar avatar-32 photo avatar-default" src="static/images/blog/emma.jpg" alt="Comment Author">
+                                                                <img class="avatar avatar-32 photo avatar-default" src="{% static 'images/blog/emma.jpg' %}" alt="Comment Author">
                                                                 <b class="fn">
                                                                     <a class="url" rel="external nofollow" href="#">Emma</a>
                                                                 </b>					
@@ -389,7 +389,7 @@
                                                             <li class="comment odd alt depth-2">
                                                                 <div class="comment-body">
                                                                     <div class="comment-author vcard">
-                                                                        <img class="avatar photo" src="static/images/blog/peter.jpg" alt="Comment Avatar">
+                                                                        <img class="avatar photo" src="{% static 'images/blog/peter.jpg' %}" alt="Comment Avatar">
                                                                         <b class="fn">
                                                                             <a class="url" rel="external nofollow" href="#">Peter</a>
                                                                         </b>
@@ -417,7 +417,7 @@
                                                         </ol>
                                                         <div class="comment-body">
                                                             <div class="comment-author vcard">
-                                                                <img class="avatar avatar-32 photo avatar-default" src="static/images/blog/mathew.jpg" alt="Comment Author">
+                                                                <img class="avatar avatar-32 photo avatar-default" src="{% static 'images/blog/mathew.jpg' %}" alt="Comment Author">
                                                                 <b class="fn">
                                                                     <a class="url" rel="external nofollow" href="#">Mathew</a>
                                                                 </b>					
@@ -652,55 +652,55 @@
         <!-- End: Footer -->
 
         <!-- jQuery Latest Version 1.x -->
-        <script type="text/javascript" src="static/js/jquery-1.12.4.min.js"></script>
+        <script type="text/javascript" src="{% static 'js/jquery-1.12.4.min.js"></script>
         
         <!-- jQuery UI -->
-        <script type="text/javascript" src="static/js/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="{% static 'js/jquery-ui.min.js"></script>
         
         <!-- jQuery Easing -->
-        <script type="text/javascript" src="static/js/jquery.easing.1.3.js"></script>
+        <script type="text/javascript" src="{% static 'js/jquery.easing.1.3.js"></script>
 
         <!-- Bootstrap -->
-        <script type="text/javascript" src="static/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="{% static 'js/bootstrap.min.js"></script>
         
         <!-- Mobile Menu -->
-        <script type="text/javascript" src="static/js/mmenu.min.js"></script>
+        <script type="text/javascript" src="{% static 'js/mmenu.min.js"></script>
         
         <!-- Harvey - State manager for media queries -->
-        <script type="text/javascript" src="static/js/harvey.min.js"></script>
+        <script type="text/javascript" src="{% static 'js/harvey.min.js"></script>
         
         <!-- Waypoints - Load Elements on View -->
-        <script type="text/javascript" src="static/js/waypoints.min.js"></script>
+        <script type="text/javascript" src="{% static 'js/waypoints.min.js"></script>
 
         <!-- Facts Counter -->
-        <script type="text/javascript" src="static/js/facts.counter.min.js"></script>
+        <script type="text/javascript" src="{% static 'js/facts.counter.min.js"></script>
 
         <!-- MixItUp - Category Filter -->
-        <script type="text/javascript" src="static/js/mixitup.min.js"></script>
+        <script type="text/javascript" src="{% static 'js/mixitup.min.js"></script>
 
         <!-- Owl Carousel -->
-        <script type="text/javascript" src="static/js/owl.carousel.min.js"></script>
+        <script type="text/javascript" src="{% static 'js/owl.carousel.min.js"></script>
         
         <!-- Accordion -->
-        <script type="text/javascript" src="static/js/accordion.min.js"></script>
+        <script type="text/javascript" src="{% static 'js/accordion.min.js"></script>
         
         <!-- Responsive Tabs -->
-        <script type="text/javascript" src="static/js/responsive.tabs.min.js"></script>
+        <script type="text/javascript" src="{% static 'js/responsive.tabs.min.js"></script>
         
         <!-- Responsive Table -->
-        <script type="text/javascript" src="static/js/responsive.table.min.js"></script>
+        <script type="text/javascript" src="{% static 'js/responsive.table.min.js"></script>
         
         <!-- Masonry -->
-        <script type="text/javascript" src="static/js/masonry.min.js"></script>
+        <script type="text/javascript" src="{% static 'js/masonry.min.js"></script>
         
         <!-- Carousel Swipe -->
-        <script type="text/javascript" src="static/js/carousel.swipe.min.js"></script>
+        <script type="text/javascript" src="{% static 'js/carousel.swipe.min.js"></script>
         
         <!-- bxSlider -->
-        <script type="text/javascript" src="static/js/bxslider.min.js"></script>
+        <script type="text/javascript" src="{% static 'js/bxslider.min.js"></script>
         
         <!-- Custom Scripts -->
-        <script type="text/javascript" src="static/js/main.js"></script>
+        <script type="text/javascript" src="{% static 'js/main.js"></script>
 
     </body>
 
