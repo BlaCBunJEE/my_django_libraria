@@ -39,18 +39,12 @@
                         </div>
                         <form class="login" method="post">
                           <p class="form-row form-row-first input-required">
-                            <label>
-                              <span class="first-letter">Barcode or Username</span>
-                              <span class="second-letter">*</span>
-                            </label>
-                            <input type="text" id="username" name="username" class="input-text">
+
+                            <input type="email" id="email1" name="email" class="input-text" placeholder="Email Address">
                           </p>
                           <p class="form-row form-row-last input-required">
-                            <label>
-                              <span class="first-letter">Pin</span>
-                              <span class="second-letter">*</span>
-                            </label>
-                            <input type="password" id="password" name="password" class="input-text">
+
+                            <input type="password" id="password" name="password" class="input-text" placeholder="Password">
                           </p>
                           <div class="clear"></div>
                           <div class="password-form-row">
@@ -59,7 +53,7 @@
                               <label class="inline" for="rememberme">Remember me</label>
                             </p>
                             <p class="lost_password">
-                              <a href="#">Lost your Pin?</a>
+                              <a href="#">Lost your Password?</a>
                             </p>
                           </div>
                           <input type="submit" value="Login" name="login" class="button btn btn-default">
@@ -76,22 +70,23 @@
                         <div class="new-user-head">
                           <h2>Create New Account</h2>
                           <span class="underline left"></span>
-                          <p>If no barcode has been assigned for your account, please contact the library.</p>
+                          <p>Become one of us today by creating an account right here.</p>
                         </div>
                         <form class="login" method="post">
                           <p class="form-row form-row-first input-required">
-                            <label>
-                              <span class="first-letter">Barcode</span>
-                              <span class="second-letter">*</span>
-                            </label>
-                            <input type="text" id="username1" name="username" class="input-text">
+
+                            <input type="text" id="fName" name="fName" class="input-text" placeholder="First Name">
+                          </p>
+                          <p class="form-row form-row-first input-required">
+
+                            <input type="text" id="lName" name="lName" class="input-text" placeholder="Last Name">
+                          </p>
+                          <p class="form-row form-row-first input-required">
+
+                            <input type="email" id="email" name="email" class="input-text" placeholder="Email Address">
                           </p>
                           <p class="form-row input-required">
-                            <label>
-                              <span class="first-letter">Password</span>
-                              <span class="second-letter">*</span>
-                            </label>
-                            <input type="password" id="password1" name="password" class="input-text">
+                            <input type="password" id="password1" name="password" class="input-text" placeholder="Password">
                           </p>
                           <div class="clear"></div>
                           <input type="submit" value="Signup" name="signup" class="button btn btn-default">
