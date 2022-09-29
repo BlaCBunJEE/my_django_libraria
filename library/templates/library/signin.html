@@ -9,7 +9,7 @@
     <div class="banner-header">
       <h2>Signin</h2>
       <span class="underline center"></span>
-      <p class="lead">Proin ac eros pellentesque dolor pharetra tempo.</p>
+      <p class="lead">Just a few steps away from becoming a member of the family.</p>
     </div>
     <div class="breadcrumb">
       <ul>
@@ -38,6 +38,7 @@
                           <span class="underline left"></span>
                         </div>
                         <form class="login" method="post">
+                          {% csrf_token %}
                           <p class="form-row form-row-first input-required">
 
                             <input type="email" id="email1" name="email" class="input-text" placeholder="Email Address">

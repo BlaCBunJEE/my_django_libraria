@@ -1,9 +1,5 @@
 from django.shortcuts import render, redirect
-from django.views.generic import DetailView, ListView
 from .models import LibraryUser, Category, Author, BooksMedia
-from django.views.generic import DetailView, ListView
-from stocks import Books
-import random
 
 
 # Create your views here.
@@ -18,9 +14,24 @@ def home(request):
 
 
 def media(request):
-    all_books = BooksMedia.objects.all()[0:16]
-    context = {'books': all_books}
+    all_books = BooksMedia.objects.all()[0:12]
+    category = Category.objects.all()
+    context = {'books': all_books, 'categories': category}
     return render(request, 'library/media-grid-view.html', context)
+
+
+def media_list(request):
+    all_books = BooksMedia.objects.all()[0:12]
+    category = Category.objects.all()
+    context = {'books': all_books, 'categories': category}
+    return render(request, 'library/media-list-view.html', context)
+
+
+def mediadetail(request, pk):
+    requested_book = BooksMedia.objects.get(id=pk)
+    context = {'requested_book': requested_book}
+    return render(request, 'library/media-detail.html', context)
+
 
 
 def blog(request):
@@ -46,8 +57,3 @@ def cart(request):
 def checkout(request):
     context = {}
     return render(request, 'library/checkout.html', context)
-
-
-class MediaDetail(DetailView):
-    model = BooksMedia
-    template_name = 'library/media-detail.html'

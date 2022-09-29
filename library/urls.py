@@ -12,5 +12,7 @@ urlpatterns = [
     path('signin/', views.signin, name='signin'),
     path('cart/', views.cart, name='cart'),
     path('checkout/', views.checkout, name='checkout'),
+    path('details/<str:pk>/', views.mediadetail, name='mediadetail'),
+    path('media_list/', views.media_list, name='media_list'),
 ]
 
